@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style> 
+        *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+         header{
+             background: rgb(8, 82, 82);
+             text-align: center;
+             color: white;
+             padding: 20px 0;
+         }
+         .lista-cadastro{
+             display: flex;
+             margin: 20px o;
+             padding: 20px;
+         }
+         .lista-cadastro input[type=text]{
+             flex: 1;
+             height: 40px;
+             padding-left: 0 20px;
+         }
+         .lista-produto-single{
+             padding: 10px 0;
+             margin: 20px;
+             border-bottom: 1px solid #ccc;
+             display: inline;
+         }
+         .lista-produto-single h3{
+             flex: 1;
+             padding: 0 20px;
+         }
+         h3.price-produto{
+             text-align: right;
+             font-size: 17px;
+        }
+         h3.price-produto > span{
+            background: rgb(8, 82, 82);
+            padding: 8px 10px;
+            border-radius: 20px;
+            color:white
+         }
+         .soma-produto{
+            margin: 20px;
+            text-align: right;
+         }
+
+    </style>
+<body>
+    <header>
+        <h2> App Lista de SuperMercado</h2>
+    </header>
+        <div class="lista-cadastro">
+            <input type="text" placeholder="Nome do produto..." name= "nome_produto" />
+            <input type="number" placeholder="Valor do produto" name= "valor_produto" step="0.01" title="This Should be a number with up to 2 decimal"/>
+            <input type="submit"  value="Cadastrar" name="acao"/>
+        </div>
+        <div class="lista-produtos">
+
+
+
+
+            </div>
+        </div>
+
+        <div class="soma-produto">
+            <h1>Total: R$0</h1>
+        </div>
+
+        <button name ="limpar">Limpar</button>
+
+    
+</body>
+<script src="supermercado.js"></script>
+</html>
